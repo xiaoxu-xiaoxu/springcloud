@@ -2,12 +2,12 @@ package com.xiaoxu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServer7002Main {
+@EnableConfigServer
+public class ConfigCenter3344Main {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServer7002Main.class, args);
+        SpringApplication.run(ConfigCenter3344Main.class, args);
     }
 }

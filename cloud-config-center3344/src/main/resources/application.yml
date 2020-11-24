@@ -1,0 +1,21 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaoxu-xiaoxu/spring-cloud.config.git
+          search-paths:
+            - spring-cloud.config
+          username: xiaoxu-xiaoxu
+          password: 1998515rukia
+          default-label: main
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka/
