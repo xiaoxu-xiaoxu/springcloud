@@ -8,6 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class FeginOrder80Main {
     public static void main(String[] args) {
+        int a = 0;
         SpringApplication.run(FeginOrder80Main.class, args);
     }
 }
