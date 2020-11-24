@@ -1,0 +1,11 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: cloud-consumercon-order80
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      discovery:
+        service-name: cloud-consumercon

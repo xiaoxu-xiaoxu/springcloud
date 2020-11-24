@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaoxu.dao.IPaymentDao">
+
+    <resultMap id="ResultMap" type="com.xiaoxu.bean.Payment">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="serial" jdbcType="VARCHAR" property="serial"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="ResultMap">
+        select * from payment;
+    </select>
+
+</mapper>
