@@ -7,11 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xiaoxu-xiaoxu/spring-cloud.config.git
+          uri: git@github.com:xiaoxu-xiaoxu/spring-cloud.config.git
           search-paths:
             - spring-cloud.config
-          username: xiaoxu-xiaoxu
-          password: 1998515rukia
           default-label: main
 eureka:
   client:
