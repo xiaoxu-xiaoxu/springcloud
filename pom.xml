@@ -25,6 +25,9 @@
         <module>cloud-consumer-feign-hystrix-order80</module>
         <module>cloud-gateway-9527</module>
         <module>cloud-config-center3344</module>
+        <module>cloud-config-client3355</module>
+        <module>cloud-rabbit-stream-provider8801</module>
+        <module>cloud-rabbit-stream-consumer8802</module>
     </modules>
     <packaging>pom</packaging>
 

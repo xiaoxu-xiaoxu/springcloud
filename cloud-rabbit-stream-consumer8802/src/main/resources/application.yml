@@ -1,0 +1,31 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: cloud-rabbit-provider8801
+  cloud:
+    stream:
+      binders: # 需要绑定mq的信息
+        default-binder:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings: #服务的整合
+        input:
+          destination: studyExchange
+          content-type: application/json
+          # binder: defaultRabbit
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 5
+    instance-id: receive-8802.com
+    prefer-ip-address: true
