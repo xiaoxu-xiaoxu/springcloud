@@ -10,8 +10,7 @@ spring:
           uri: https://github.com/xiaoxu-xiaoxu/spring-cloud.config.git
           search-paths:
             - spring-cloud.config
-          username: xiaoxu-xiaoxu
-          password: 1998514rukia
+
       label: master
 eureka:
   client:
