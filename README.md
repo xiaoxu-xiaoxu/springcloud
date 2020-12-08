@@ -1,2 +1,1 @@
-spring cloud
-spring cloud alibaba demo
+spring cloud demo
